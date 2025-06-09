@@ -22,37 +22,40 @@ public class Temperatura {
 
         obj.fahrenheit = (obj.celsius * 1.8)+32;
 
-        System.out.println("Estos son los kilometros" + obj.kilometros);
+        System.out.println("Estos son los grados farenheit" + obj.fahrenheit);
 
     }
 
     public void convertirCelsuisaKel() {
-        System.out.println("Escrible los centimetros a convertir:");
+
+        System.out.println("Escribe los grados celcius que deseas convertir");
         obj.celsius = scanner.nextInt();
 
         obj.kelvin = (obj.celsius + 273.15);
 
-        System.out.println("Estos son los kilometros" + obj.metros);
+        System.out.println("Estos son los grados Kelvin" + obj.kelvin);
 
     }
 
     public void convertirFarenheitaCel() {
-        System.out.println("Escrible los centimet:");
+
+        System.out.println("Escrible los farenheiy que deseas convertir:");
         obj.fahrenheit = scanner.nextInt();
 
         obj.celsius = (obj.fahrenheit - 32)/1.8;
 
-        System.out.println("Estos son los kilometros" + obj.metros);
+        System.out.println("Estos son los grados celcius" + obj.celsius);
 
     }
 
     public void convertirKelvinaCel() {
-        System.out.println("Escrible ");
+
+        System.out.println("Escrible los grados kelvin que deseas convertir ");
         obj.kelvin = scanner.nextInt();
 
         obj.celsius = (obj.kelvin - 273.15);
 
-        System.out.println("Estos " + obj.metros);
+        System.out.println("Estos son los grados celcius " + obj.celsius);
 
     }
 
