@@ -18,23 +18,34 @@ public class Menu {
     public double kilometros;
     public double centimetros;
 
-    public int menu(int opcion) {
+    public void menu() {
         System.out.println("-----MENU-----");
         System.out.println("1._ longitudes");
         System.out.println("2._ temperaturas");
-        return opcion;
+        
     }
 
-    public int submenulongitudes(int opcion) {
+    public int submenutemperaturas(int opcion) {
+        Distancia distancia = new Distancia();
         System.out.println("-----MENU-----");
         System.out.println("1._ celsius a fahrenheit");
         System.out.println("2._ celcius a kelvin");
         System.out.println("2._ fahrenheit a celcius");
         System.out.println("2._ kelvin a celcius");
+        
+        switch (opcion) {
+            case 1:
+                distancia.convertirCentimetros();
+             
+                break;
+            default:
+                
+        }
         return opcion;
+        
     }
 
-    public int submenutemperaturas(int opcion) {
+    public int submenulongitudes(int opcion) {
         System.out.println("-----MENU-----");
         System.out.println("1._ metros a kilometros");
         System.out.println("2._ centimetros a metros");
