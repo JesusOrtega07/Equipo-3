@@ -33,7 +33,7 @@ public class Distancia {
         
         obj.metros = (obj.centimetros/100);
         
-        System.out.println("Estos son los kilometros" + obj.metros);
+        System.out.println("Estos son los metros" + obj.metros);
         
     }
             
