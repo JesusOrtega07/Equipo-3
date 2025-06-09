@@ -29,7 +29,7 @@ public class Distancia {
     
     public void convertirCentimetros(){
         System.out.println("Escrible los centimetros a convertir:");
-        obj.metros = scanner.nextInt();
+        obj.centimetros = scanner.nextInt();
         
         obj.metros = (obj.centimetros/100);
         

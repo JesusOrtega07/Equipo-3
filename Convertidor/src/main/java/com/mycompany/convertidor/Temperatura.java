@@ -20,7 +20,7 @@ public class Temperatura {
         System.out.println("Escrible los celsius a convertir:");
         obj.celsius = scanner.nextInt();
 
-        obj.kilometros = (obj.metros / 1000);
+        obj.fahrenheit = (obj.celsius * 1.8)+32;
 
         System.out.println("Estos son los kilometros" + obj.kilometros);
 
@@ -28,9 +28,9 @@ public class Temperatura {
 
     public void convertirCelsuisaKel() {
         System.out.println("Escrible los centimetros a convertir:");
-        obj.metros = scanner.nextInt();
+        obj.celsius = scanner.nextInt();
 
-        obj.metros = (obj.centimetros / 100);
+        obj.kelvin = (obj.celsius + 273.15);
 
         System.out.println("Estos son los kilometros" + obj.metros);
 
@@ -38,9 +38,9 @@ public class Temperatura {
 
     public void convertirFarenheitaCel() {
         System.out.println("Escrible los centimet:");
-        obj.metros = scanner.nextInt();
+        obj.fahrenheit = scanner.nextInt();
 
-        obj.metros = (obj.centimetros / 100);
+        obj.celsius = (obj.fahrenheit - 32)/1.8;
 
         System.out.println("Estos son los kilometros" + obj.metros);
 
@@ -48,9 +48,9 @@ public class Temperatura {
 
     public void convertirKelvinaCel() {
         System.out.println("Escrible ");
-        obj.metros = scanner.nextInt();
+        obj.kelvin = scanner.nextInt();
 
-        obj.metros = (obj.centimetros / 100);
+        obj.celsius = (obj.kelvin - 273.15);
 
         System.out.println("Estos " + obj.metros);
 
